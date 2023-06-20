@@ -1,0 +1,914 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+       "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<!-- Header -->
+	<head>
+		<title>Mon Portfolio</title> <!-- Page's Title -->
+		<link rel="icon" href="icon.ico" type="image/x-icon"> <!-- Page's Icon -->
+		<link rel="shortcut icon" href="icon.ico" type="image/x-icon"> <!-- Page's Icon 2 -->
+		<link rel="stylesheet" type="text/css" href="portfolio.css"> <!-- Page's Fichier CSS -->
+		<meta name="viewport" content="width=device-width,initial-scale=1" /> <!-- Use width on progress bar-->
+		<script src="portfolio-function.js"></script>
+	</head>
+	<!-- Body -->
+	<body>
+		<!-- Navbar-->
+		<div class="navbar" id="navbar">
+			<img src="MyPhoto.jpg" alt="Ma photo" class="profile-image">
+			<h1>Quentin</h1>
+
+			<a href="#accueil">Home</a>
+			<a href="#a-propos">About me</a>
+			<a href="#competences">Skills</a>
+			<a href="#scolarite">Schooling</a>
+			<a href="#parcourPro">Experiences</a>
+			<a href="#portfolio">Portfolio</a>
+			<a href="#linguistiques">Travels</a>
+		</div>
+		<!--End Navbar -->
+		<!-- Button Navbar (tab + mobile) -->
+		<div class="NavBarDisplay" id="NavBarDisplay">
+			<span class="NavBarDisplaySpan"></span>
+			<span class="NavBarDisplaySpan"></span>
+			<span class="NavBarDisplaySpan"></span>
+		</div>
+		<!-- End Button Navbar (tab + mobile)-->
+		<!-- Page's Content -->
+		<div id="content">
+			<!-- Start (Last + First) -->
+			<section id="accueil">
+				<div class="welcome-div">
+					<h2>JOLLY QUENTIN</h2>
+				</div>
+			</section>
+			<!-- About -->
+			<section id="a-propos">
+				<h2>About me</h2>
+				<p class="presentation">
+					I'm a third-year student at the CESI engineering school in Vandoeuvre-les-Nancy, specialising in IT. I've always had a passion for the world of IT and I've had the chance to develop my skills in a variety of areas thanks to the various projects I've carried out and my different professional experiences.
+				</p>
+				<div class="informations">
+					<div class="informations-personnelles">
+						<h3>Personal information</h3>
+						<ul>
+							<li>Date of birth: 31 July 2002</li>
+							<li>Age: 20 years old</li>
+							<li>Gender: Male</li>
+							<li>Pronoun: He/Him</li>
+							<li>Phone number: +33 7 81 70 56 39</li>
+							<li>E-mail address: quentin.jolly.pro@gmail.com</li>
+							<li>Place of residence: 18 lotissement le grand jardin, 54670, Malleloy, France</li>
+							<li>Studies: Engineering degree specialising in computer science</li>
+						</ul>
+					</div>
+					<div class="Photo">
+						<div class="Photo-div">
+							<img src="MyPhoto.jpg" alt="Ma photo" class="photo-size">
+						</div>
+					</div>
+					<div class="informations-complémentaires">
+						<div class="Informations-sup">
+							<h3>Further information</h3>
+							<ul>
+								<li>Driver's license</li>
+								<li>French passport</li>
+								<li>Nationality: French</li>
+							</ul>
+						</div>
+						<div class="Interests">
+							<h3>Interests</h3>
+							<ul>
+								<li>Video games</li>
+								<li>Programming</li>
+								<li>Volunteering</li>
+								<li>Help for individuals</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Skills -->
+			<section id="competences">
+				<h2>Skills</h2>
+				<div class="competences">
+					<!--Global Skills-->
+					<h3>General skills</h3>
+					<div class="competence">
+						<div class="div-skillName-content">
+							<p class="skill-name">Organisation</p>
+							<p class="value-skill">85%</p>
+						</div>
+						<div class="progress-bar">
+							<div class="progress" style="width: 85%;"></div>
+						</div>
+					</div>
+					<div class="competence">
+						<div class="div-skillName-content">
+							<p class="skill-name">Teamwork</p>
+							<p class="value-skill">100%</p>
+						</div>
+						<div class="progress-bar">
+							<div class="progress" style="width: 100%;"></div>
+						</div>
+					</div>
+					<div class="competence">
+						<div class="div-skillName-content">
+							<p class="skill-name">Ability to adapt</p>
+							<p class="value-skill">95%</p>
+						</div>    
+						<div class="progress-bar">
+							<div class="progress" style="width: 95%;"></div>
+						</div>
+					</div>
+				</div>
+				<!-- Language skills -->
+				<div class="competences">
+					<h3>Language skills</h3>
+					<div class="competence">
+						<div class="div-skillName-content">
+							<p class="skill-name">French</p>
+							<p class="value-skill">100%</p>
+						</div>  
+						<div class="progress-bar">
+							<div class="progress" style="width: 100%;"></div>
+						</div>
+					</div>
+					<div class="competence">
+						<div class="div-skillName-content">
+							<p class="skill-name">English</p>
+							<p class="value-skill">70%</p>
+						</div>  
+						<div class="progress-bar">
+							<div class="progress" style="width: 70%;"></div>
+						</div>
+					</div>
+					<div class="competence">
+						<div class="div-skillName-content">
+							<p class="skill-name">Italian</p>
+							<p class="value-skill">50%</p>
+						</div>  
+						<div class="progress-bar">
+							<div class="progress" style="width: 50%;"></div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Computer skills -->
+				<div class="competences">
+					<h3>Computer skills</h3>
+					<!-- General skills-->
+					<div class="competences_h4_clickon">
+						<h4>General skills</h4>
+						<p class="comment">(Click on for more details)</p>
+					</div>
+					<div class="competence">
+						<div class="general-skills" onclick="DisplayPopupSkillOfficeTools()">
+							<div class="div-skillName-content">
+								<p class="skill-name">Office tools</p>
+								<p class="value-skill" id="Office-tools-value"></p>
+							</div>  
+							<div class="progress-bar">
+								<div class="progress" id="Office-tools-progress"></div>
+							</div>
+						</div>
+					</div>
+					<div class="competence">
+						<div class="general-skills" onclick="DisplayPopupSkillAdminSys()">
+							<div class="div-skillName-content">
+								<p class="skill-name">System administration</p>
+								<p class="value-skill" id="Admin-Sys-value"></p>
+							</div>  
+							<div class="progress-bar">
+								<div class="progress" id="Admin-Sys-progress"></div>
+							</div>
+						</div>
+					</div>
+					<div class="competence">
+						<div class="general-skills" onclick="DisplayPopupSkillDevWeb()">
+							<div class="div-skillName-content">
+								<p class="skill-name">WEB development</p>
+								<p class="value-skill" id="Dev-Web-value"></p>
+							</div>  
+							<div class="progress-bar">
+								<div class="progress" id="Dev-Web-progress"></div>
+							</div>
+						</div>
+					</div>
+					<div class="competence">
+						<div class="general-skills" onclick="DisplayPopupSkillDatabases()">
+							<div class="div-skillName-content">
+								<p class="skill-name">Databases</p>
+								<p class="value-skill" id="Databases-value"></p>
+							</div>
+							<div class="progress-bar">
+								<div class="progress" id="Databases-progress"></div>
+							</div>
+						</div>
+					</div>
+					<div class="competence">
+						<div class="general-skills" onclick="DisplayPopupSkillOpeSystems()">
+							<div class="div-skillName-content">
+								<p class="skill-name">Operating systems: Linux & Windows</p>
+								<p class="value-skill" id="Ope-Systems-value"></p>
+							</div>  
+							<div class="progress-bar">
+								<div class="progress" id="Ope-Systems-progress"></div>
+							</div>
+						</div>
+					</div>
+					<!-- Programming skills -->
+					<h4>Programming</h4>
+					<div class="competence">
+						<div class="div-skillName-content">
+							<p class="skill-name">C</p>
+							<p class="value-skill">60%</p>
+						</div>  
+						<div class="progress-bar">
+							<div class="progress" style="width: 60%;"></div>
+						</div>
+					</div>
+					<div class="competence">
+						<div class="div-skillName-content">
+							<p class="skill-name">C++</p>
+							<p class="value-skill">65%</p>
+						</div>  
+						<div class="progress-bar">
+							<div class="progress" style="width: 65%;"></div>
+						</div>
+					</div>
+					<div class="competence">
+						<div class="div-skillName-content">
+							<p class="skill-name">C#</p>
+							<p class="value-skill">80%</p>
+						</div>  
+						<div class="progress-bar">
+							<div class="progress" style="width: 80%;"></div>
+						</div>
+					</div>
+					<div class="competence">
+						<div class="div-skillName-content">
+							<p class="skill-name">Python</p>
+							<p class="value-skill">70%</p>
+						</div>  
+						<div class="progress-bar">
+							<div class="progress" style="width: 70%;"></div>
+						</div>
+					</div>
+					<div class="competence">
+						<div class="div-skillName-content">
+							<p class="skill-name">Powershell</p>
+							<p class="value-skill">95%</p>
+						</div>  
+						<div class="progress-bar">
+							<div class="progress" style="width: 95%;"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- General computers skills popup -->
+			<div class="popup-skill" id="popup-skill-OfficeTools">
+				<div class="popup-skill-content">
+					<div class="popup-skills-items">
+						<div class="competence">
+							<div class="div-skillName-content">
+								<p class="skill-name">Word</p>
+								<p class="value-skill">100%</p>
+							</div>  
+							<div class="progress-bar">
+								<div class="progress" style="width: 100%;"></div>
+							</div>
+						</div>
+						<div class="competence">
+							<div class="div-skillName-content">
+								<p class="skill-name">PowerPoint</p>
+								<p class="value-skill">100%</p>
+							</div>  
+							<div class="progress-bar">
+								<div class="progress" style="width: 100%;"></div>
+							</div>
+						</div>
+						<div class="competence">
+							<div class="div-skillName-content">
+								<p class="skill-name">Excel</p>
+								<p class="value-skill">90%</p>
+							</div>  
+							<div class="progress-bar">
+								<div class="progress" style="width: 90%;"></div>
+							</div>
+						</div>
+						<div class="competence">
+							<div class="div-skillName-content">
+								<p class="skill-name">Teams</p>
+								<p class="value-skill">90%</p>
+							</div>  
+							<div class="progress-bar">
+								<div class="progress" style="width: 90%;"></div>
+							</div>
+						</div>
+						<div class="competence">
+							<div class="div-skillName-content">
+								<p class="skill-name">Visio</p>
+								<p class="value-skill">80%</p>
+							</div>  
+							<div class="progress-bar">
+								<div class="progress" style="width: 80%;"></div>
+							</div>
+						</div>
+					</div>
+					<button class="close-button" onclick="fermerPopupSkillOfficeTools()"></button>
+				</div>
+			</div>
+			<div class="popup-skill" id="popup-skill-AdminSys">
+				<div class="popup-skill-content">
+					<div class="popup-skills-items">
+						<div class="competence">
+							<div class="div-skillName-content">
+								<p class="skill-name">VMware vSphere</p>
+								<p class="value-skill">80%</p>
+							</div>  
+							<div class="progress-bar">
+								<div class="progress" style="width: 80%;"></div>
+							</div>
+						</div>
+						<div class="competence">
+							<div class="div-skillName-content">
+								<p class="skill-name">Active Directory</p>
+								<p class="value-skill">80%</p>
+							</div>  
+							<div class="progress-bar">
+								<div class="progress" style="width: 80%;"></div>
+							</div>
+						</div>
+						<div class="competence">
+							<div class="div-skillName-content">
+								<p class="skill-name">Zabbix</p>
+								<p class="value-skill">80%</p>
+							</div>  
+							<div class="progress-bar">
+								<div class="progress" style="width: 80%;"></div>
+							</div>
+						</div>
+						<div class="competence">
+							<div class="div-skillName-content">
+								<p class="skill-name">Centreon</p>
+								<p class="value-skill">60%</p>
+							</div>  
+							<div class="progress-bar">
+								<div class="progress" style="width: 60%;"></div>
+							</div>
+						</div>
+						<div class="competence">
+							<div class="div-skillName-content">
+								<p class="skill-name">Docker & Portainer</p>
+								<p class="value-skill">70%</p>
+							</div>  
+							<div class="progress-bar">
+								<div class="progress" style="width: 70%;"></div>
+							</div>
+						</div>
+						<div class="competence">
+							<div class="div-skillName-content">
+								<p class="skill-name">Apache HTTP Server</p>
+								<p class="value-skill">60%</p>
+							</div>  
+							<div class="progress-bar">
+								<div class="progress" style="width: 60%;"></div>
+							</div>
+						</div>
+					</div>
+					<button class="close-button" onclick="fermerPopupSkillAdminSys()"></button>
+				</div>
+			</div>
+			<div class="popup-skill" id="popup-skill-DevWeb">
+				<div class="popup-skill-content">
+					<div class="popup-skills-items">
+						<div class="competence">
+							<div class="div-skillName-content">
+								<p class="skill-name">Html</p>
+								<p class="value-skill">95%</p>
+							</div>  
+							<div class="progress-bar">
+								<div class="progress" style="width: 95%;"></div>
+							</div>
+						</div>
+						<div class="competence">
+							<div class="div-skillName-content">
+								<p class="skill-name">CSS</p>
+								<p class="value-skill">80%</p>
+							</div>  
+							<div class="progress-bar">
+								<div class="progress" style="width: 80%;"></div>
+							</div>
+						</div>
+						<div class="competence">
+							<div class="div-skillName-content">
+								<p class="skill-name">JavaScript</p>
+								<p class="value-skill">70%</p>
+							</div>  
+							<div class="progress-bar">
+								<div class="progress" style="width: 70%;"></div>
+							</div>
+						</div>
+						<div class="competence">
+							<div class="div-skillName-content">
+								<p class="skill-name">PHP</p>
+								<p class="value-skill">50%</p>
+							</div>  
+							<div class="progress-bar">
+								<div class="progress" style="width: 50%;"></div>
+							</div>
+						</div>
+					</div>
+					<button class="close-button" onclick="fermerPopupSkillDevWeb()"></button>
+				</div>
+			</div>
+			<div class="popup-skill" id="popup-skill-Databases">
+				<div class="popup-skill-content">
+					<div class="popup-skills-items">
+						<div class="competence">
+							<div class="div-skillName-content">
+								<p class="skill-name">MySql</p>
+								<p class="value-skill">80%</p>
+							</div>  
+							<div class="progress-bar">
+								<div class="progress" style="width: 80%;"></div>
+							</div>
+						</div>
+						<div class="competence">
+							<div class="div-skillName-content">
+								<p class="skill-name">SqlServer</p>
+								<p class="value-skill">70%</p>
+							</div>  
+							<div class="progress-bar">
+								<div class="progress" style="width: 70%;"></div>
+							</div>
+						</div>
+						<div class="competence">
+							<div class="div-skillName-content">
+								<p class="skill-name">PHP</p>
+								<p class="value-skill">50%</p>
+							</div>  
+							<div class="progress-bar">
+								<div class="progress" style="width: 50%;"></div>
+							</div>
+						</div>
+						<div class="competence">
+							<div class="div-skillName-content">
+								<p class="skill-name">PostgreSQL</p>
+								<p class="value-skill">60%</p>
+							</div>  
+							<div class="progress-bar">
+								<div class="progress" style="width: 60%;"></div>
+							</div>
+						</div>
+						<div class="competence">
+							<div class="div-skillName-content">
+								<p class="skill-name">Oracle</p>
+								<p class="value-skill">40%</p>
+							</div>  
+							<div class="progress-bar">
+								<div class="progress" style="width: 40%;"></div>
+							</div>
+						</div>
+					</div>
+					<button class="close-button" onclick="fermerPopupSkillDatabases()"></button>
+				</div>
+			</div>
+			<div class="popup-skill" id="popup-skill-OpeSystems">
+				<div class="popup-skill-content">
+					<div class="popup-skills-items">
+						<div class="competence">
+							<div class="div-skillName-content">
+								<p class="skill-name">Linux Debian</p>
+								<p class="value-skill">80%</p>
+							</div>  
+							<div class="progress-bar">
+								<div class="progress" style="width: 80%;"></div>
+							</div>
+						</div>
+						<div class="competence">
+							<div class="div-skillName-content">
+								<p class="skill-name">Linux Ubuntu</p>
+								<p class="value-skill">70%</p>
+							</div>  
+							<div class="progress-bar">
+								<div class="progress" style="width: 70%;"></div>
+							</div>
+						</div>
+						<div class="competence">
+							<div class="div-skillName-content">
+								<p class="skill-name">Linux CentOS</p>
+								<p class="value-skill">50%</p>
+							</div>  
+							<div class="progress-bar">
+								<div class="progress" style="width: 50%;"></div>
+							</div>
+						</div>
+						<div class="competence">
+							<div class="div-skillName-content">
+								<p class="skill-name">Windows 10</p>
+								<p class="value-skill">95%</p>
+							</div>  
+							<div class="progress-bar">
+								<div class="progress" style="width: 95%;"></div>
+							</div>
+						</div>
+						<div class="competence">
+							<div class="div-skillName-content">
+								<p class="skill-name">Windows 8</p>
+								<p class="value-skill">80%</p>
+							</div>  
+							<div class="progress-bar">
+								<div class="progress" style="width: 80%;"></div>
+							</div>
+						</div>
+						<div class="competence">
+							<div class="div-skillName-content">
+								<p class="skill-name">Windows 7</p>
+								<p class="value-skill">70%</p>
+							</div>  
+							<div class="progress-bar">
+								<div class="progress" style="width: 70%;"></div>
+							</div>
+						</div>
+						<div class="competence">
+							<div class="div-skillName-content">
+								<p class="skill-name">Windows server 2019</p>
+								<p class="value-skill">80%</p>
+							</div>  
+							<div class="progress-bar">
+								<div class="progress" style="width: 80%;"></div>
+							</div>
+						</div>
+						<div class="competence">
+							<div class="div-skillName-content">
+								<p class="skill-name">Windows server 2016</p>
+								<p class="value-skill">80%</p>
+							</div>  
+							<div class="progress-bar">
+								<div class="progress" style="width: 80%;"></div>
+							</div>
+						</div>
+						<div class="competence">
+							<div class="div-skillName-content">
+								<p class="skill-name">Windows server 2012 R2</p>
+								<p class="value-skill">50%</p>
+							</div>  
+							<div class="progress-bar">
+								<div class="progress" style="width: 50%;"></div>
+							</div>
+						</div>
+						<div class="competence">
+							<div class="div-skillName-content">
+								<p class="skill-name">Windows server 2008 R2</p>
+								<p class="value-skill">30%</p>
+							</div>  
+							<div class="progress-bar">
+								<div class="progress" style="width: 30%;"></div>
+							</div>
+						</div>
+					</div>
+					<button class="close-button" onclick="fermerPopupSkillOpeSystems()"></button>
+				</div>
+			</div>
+
+			<!-- Timelines -->
+			<div class="parcours">
+				<!-- School -->
+				<div class="parcours-school">
+					<section id="scolarite">
+						<h2>Schooling</h2>
+						<div class="timeline">
+							<div class="point">
+								<div class="circle"></div>
+								<div class="content">
+									<h4>Engineering school</h4>
+									<div class="date">
+										<p>In progress</p>
+									</div>
+									<p>CESI School of Engineering, Vandoeuvre-les-Nancy, France</p>
+									<p>Diploma in computer engineering</p>
+								</div>
+							</div>
+							<div class="point">
+								<div class="circle"></div>
+								<div class="content">
+									<h4>General baccalaureate</h4>
+									<div class="date">
+										<p>June 2020</p>
+									</div>
+									<p>Henri Poincare High School, Nancy, France</p>
+									<p>Scientific baccalaureate - specialising in computing and digital sciences</p>
+								</div>
+							</div>
+							<div class="point">
+								<div class="circle"></div>
+								<div class="content">
+									<h4>Junior school certificate</h4>
+									<div class="date">
+										<p>June 2017</p>
+									</div>
+									<p>Louis Marin College, Custines, France</p>
+									<p>Junior school certificate, obtained with distinction</p>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+				<!-- work -->
+				<div class="parcours-work">
+					<section id="parcourPro">
+						<div class="competences_h4_clickon">
+							<h2>Career path</h2>
+							<p class="comment">(Click on for more details)</p>
+						</div>
+						<div class="timeline">
+							<div class="point-work" onclick="DisplayPopupDEFIInformatique()">
+								<div class="circle"></div>
+								<div class="content">
+									<h4>Internship & Fixed-term contract</h4>
+									<div class="date">
+										<p>January - April 2023 | July - August 2023</p>
+									</div>
+									<p>DEFI Informatique, Maxeville, France</p>
+									<p>I did a 4-month work placement with the SME DEFI Informatique in 2023. This work experience gave me an insight into the environment of small businesses and the constraints they face. Following this experience, I was offered a fixed-term contract for the summer of 2023.</p>
+								</div>
+							</div>
+							<div class="point-work" onclick="DisplayPopupInstitutCancerologieLorraine()">
+								<div class="circle"></div>
+								<div class="content">
+									<h4>Internship & Fixed-term contract</h4>
+									<div class="date">
+										<p>April - July 2022 | August 2022</p>
+									</div>
+									<p>Lorraine Cancer Institute, Vandoeuvre-les-Nancy, France</p>
+									<p>I did a 4-month placement at the Lorraine Cancer Institute in 2022. This work experience enabled me to hone my skills and secure a fixed-term contract in August 2022.</p>
+								</div>
+							</div>
+							<div class="point-work" onclick="DisplayPopupCarrefourCustines()">
+								<div class="circle"></div>
+								<div class="content">
+									<h4>Seasonal jobs</h4>
+									<div class="date">
+										<p>July-August 2021</p>
+									</div>
+									<p>Carrefour, Custines, France</p>
+									<p>During the summer of 2021, I was able to work in a Carrefour supermarket, which enabled me to improve a little more on the skills I'd acquired the previous year.</p>
+								</div>
+							</div>
+							<div class="point-work" onclick="DisplayPopupCarrefourBAD()">
+								<div class="circle"></div>
+								<div class="content">
+									<h4>Seasonal jobs</h4>
+									<div class="date">
+										<p>August 2020</p>
+									</div>
+									<p>Carrefour, Bouxieres-aux-Dames, France</p>
+									<p>In August 2020, I had the opportunity to work in a Carrefour supermarket. This experience enabled me to hone a number of skills, such as teamwork and organisation, but also to develop new ones, such as customer-employee relations.</p>
+								</div>
+							</div>
+							<div class="point-work" onclick="DisplayPopupAtoutbio()">
+								<div class="circle"></div>
+								<div class="content">
+									<h4>Internship</h4>
+									<div class="date">
+										<p>2016</p>
+									</div>
+									<p>Atoutbio, Nancy, France</p>
+									<p>I did my compulsory work placement in the third year at the Atoutbio laboratory in Nancy. This placement gave me the opportunity to discover a number of little-known professions and develop a range of skills, such as teamwork, organisational skills and the ability to adapt.</p>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+			<!-- Popup timeline work -->
+			<div class="popup-timeline-work" id="popup-timeline-DEFIInformatique">
+				<div class="popup-timeline-content">
+					<img src="Logo-Company\DEFI.PNG" alt="DEFI Informatique Logo">
+					<h3>My responsibilities in DEFI Informatique</h3>
+					<a>Upgrade of the physical components of two servers (Dell PowerEdge R430 (2014) & HP ProLiant DL360 G7 (2012))</a>
+					<a>Driver updates</a>
+					<a>ESXi installation on each</a>
+					<a>Create and configure virtual machines (Windows 2019, Windows 10, Debian 11, Ubuntu 22.04)</a>
+					<a>Zabbix installation and configuration</a>
+					<a>Configuration of two portainers (one for applications (GLPI, Bookstack), one for a proxy (Nginx))</a>
+					<a>Resolution of bugs on remote infrastructure (OVH)</a>
+					<a>Support for hosted customers</a>
+					<button class="close-button" onclick="fermerPopupDEFIInformatique()"></button>
+				</div>
+			</div>
+			<div class="popup-timeline-work" id="popup-timeline-InstitutCancerologieLorraine">
+				<div class="popup-timeline-content">
+					<img src="Logo-Company\ICL.JPG" alt="ICL Logo">
+					<h3>My responsibilities in Lorraine Cancer Institute</h3>
+					<a>PowerShell script to check Active Directory organization (with excel report generation).</a>
+					<a>Manipulation and organization of data in Oracle databases, csv and excel files.</a>
+					<a>Sending documents by e-mail with PowerShell</a>
+					<a>PowerShell script acting as a user to collect application performance data for graphing.</a>
+					<a>Help with configuring the ServiceNav solution</a>
+					<a>Setting up automatic maintenance with PowerShell and ServiceNav's REST api</a>
+					<button class="close-button" onclick="fermerPopupInstitutCancerologieLorraine()"></button>
+				</div>
+			</div>
+			<div class="popup-timeline-work" id="popup-timeline-CarrefourCustines">
+				<div class="popup-timeline-content">
+					<img src="Logo-Company\Carrefour.JPG" alt="Carrefour Logo">
+					<h3>My responsibilities in Carrefour</h3>
+					<a>Handling money in the form of luncheon vouchers, cheques and cash</a>
+					<a>Shelf stocking, racking and replenishment</a>
+					<a>Management of deliveries</a>
+					<a>Customer assistance and advice</a>
+					<button class="close-button" onclick="fermerPopupCarrefourCustines()"></button>
+				</div>
+			</div>
+			<div class="popup-timeline-work" id="popup-timeline-CarrefourBAD">
+				<div class="popup-timeline-content">
+					<img src="Logo-Company\Carrefour.JPG" alt="Carrefour Logo">
+					<h3>My responsibilities in Carrefour</h3>
+					<a>Handling money in the form of luncheon vouchers, cheques and cash</a>
+					<a>Shelf stocking, racking and replenishment</a>
+					<a>Management of deliveries</a>
+					<a>Customer assistance and advice</a>
+					<a>Parcel collection and delivery</a>
+					<button class="close-button" onclick="fermerPopupCarrefourBAD()"></button>
+				</div>
+			</div>
+			<div class="popup-timeline-work" id="popup-timeline-Atoutbio">
+				<div class="popup-timeline-content">
+					<img src="Logo-Company\Atoutbio.JPG" alt="Atoutbio Logo">
+					<h3>My responsibilities in Atoutbio</h3>
+					<a>Observing the work of laboratory technicians and taking notes on actions taken</a>
+					<a>Scan and prepare blood samples for analysis</a>
+					<a>Calculate white and red blood cell counts in a sample</a>
+					<button class="close-button" onclick="fermerPopupAtoutbio()"></button>
+				</div>
+			</div>
+			
+			<!-- Portfolio -->
+			<section id="portfolio">
+				<h2>Portfolio</h2>
+				
+				<h3>School projects</h3>
+				<!-- School Projects Box -->
+				<div class="projet-section">
+					<div class="projet" onclick="DisplayPopupC()">
+						<img src="Logo-Projets\C.PNG" alt="Projet C">
+					</div>
+					<div class="projet" onclick="DisplayPopupCpp()">
+						<img src="Logo-Projets\C++.PNG" alt="Projet C++">
+					</div>
+					<div class="projet" onclick="DisplayPopupC_sharp()">
+						<img src="Logo-Projets\C_sharp.PNG" alt="Projet C#">
+					</div>
+					<div class="projet" onclick="DisplayPopupCisco()">
+						<img src="Logo-Projets\Cisco.PNG" alt="Projet Packet Tracer">
+					</div>
+					<div class="projet" onclick="DisplayPopupAdminSys()">
+						<img src="Logo-Projets\centreon.PNG" alt="Projet Administration système">
+					</div>
+					<div class="projet" onclick="DisplayPopupWeb()">
+						<img src="Logo-Projets\web.PNG" alt="Projet Web">
+					</div>
+				</div>
+				<!-- School Projects Popup -->
+				<div class="popup-projet" id="popup-projet-C">
+					<div class="popup-projet-content">
+						<img src="Logo-Projets\C.PNG" alt="Projet C">
+						<h3>Weather station</h3>
+						<p>The aim of this project was to create a weather station in C using an Arduino board. To do this, we had various elements such as electrical wires, a GPS beacon and various sensors. This data was to be automatically recorded on an SD card integrated into the Arduino.</p>
+						<button class="close-button" onclick="fermerPopupC()"></button>
+					</div>
+				</div>
+				<div class="popup-projet" id="popup-projet-Cpp">
+					<div class="popup-projet-content">
+						<img src="Logo-Projets\C++.PNG" alt="Projet C++">
+						<h3>Commercial management application</h3>
+						<p>The aim of this project was to develop a C++ application for managing various elements of a business, such as stocks, orders and customers, as well as producing statistics based on various parameters.</p>
+						<button class="close-button" onclick="fermerPopupCpp()"></button>
+					</div>
+				</div>
+				<div class="popup-projet" id="popup-projet-C_sharp">
+					<div class="popup-projet-content">
+						<img src="Logo-Projets\C_sharp.PNG" alt="Projet C_sharp">
+						<h3>Document backup application</h3>
+						<p>The aim of this project was to develop a document backup application. During a backup, each action was recorded in a file and all the elements saved were automatically encrypted.</p>
+						<button class="close-button" onclick="fermerPopupC_sharp()"></button>
+					</div>
+				</div>
+				<div class="popup-projet" id="popup-projet-Cisco">
+					<div class="popup-projet-content">
+						<img src="Logo-Projets\Cisco.PNG" alt="Projet Packet Tracer">
+						<h3>Setting up a city-wide network</h3>
+						<p>The aim of this project was to set up a secure computer network in a fictitious town using Cisco's Packet Tracer software.</p>
+						<button class="close-button" onclick="fermerPopupCisco()"></button>
+					</div>
+				</div>
+				<div class="popup-projet" id="popup-projet-AdminSys">
+					<div class="popup-projet-content">
+						<img src="Logo-Projets\Centreon.PNG" alt="Projet Administration système">
+						<h3>A complete infrastructure</h3>
+						<p>The aim of this project was to learn how to set up a complete IT infrastructure within a company. This involved knowing how to set up an Active Directory server, how to secure confidential documents and how to block access to the network from the Internet using firewalls.</p>
+						<button class="close-button" onclick="fermerPopupAdminSys()"></button>
+					</div>
+				</div>
+				<div class="popup-projet" id="popup-projet-Web">
+					<div class="popup-projet-content">
+						<img src="Logo-Projets\Web.PNG" alt="Projet Web">
+						<h3>A website for students</h3>
+						<p>The aim of this project was to develop a website using HTML, PHP, CSS and JavaScript. The aim of this fictitious site was to allow companies to post internship offers themselves on a site to which students had easy access. All access had to be filtered via user accounts and the data contained in a secure PHP database.</p>
+						<button class="close-button" onclick="fermerPopupWeb()"></button>
+					</div>
+				</div>
+
+				<h3>Internship & fixed-term contract projects</h3>
+				<!-- Work Projects Box -->
+				<div class="projet-section">
+					<div class="projet" onclick="DisplayPopupPowershellAD()">
+						<img src="Logo-Projets\powershell.PNG" alt="Projet powershell activedirectory">
+					</div>
+					<div class="projet" onclick="DisplayPopupPerformance()">
+						<img src="Logo-Projets\performance.PNG" alt="Projet performances applicatives">
+					</div>
+					<div class="projet" onclick="DisplayPopupMonitoring()">
+						<img src="Logo-Projets\monitoring.PNG" alt="Projets monitoring">
+					</div>
+					<div class="projet" onclick="DisplayPopupCybersecurity()">
+						<img src="Logo-Projets\cybersecurity.PNG" alt="Projet Cybersecurity">
+					</div>
+					<div class="projet" onclick="DisplayPopupVmware()">
+						<img src="Logo-Projets\vmware.PNG" alt="Projet VMware">
+					</div>
+					<div class="projet" onclick="DisplayPopupDocker()">
+						<img src="Logo-Projets\docker.PNG" alt="Projet Docker">
+					</div>
+				</div>
+				<!-- Work Projects Popup -->
+				<div class="popup-projet" id="popup-projet-powershellAD">
+					<div class="popup-projet-content">
+						<img src="Logo-Projets\powershell.PNG" alt="Projet powershellAD">
+						<h3>Powershell opportunities</h3>
+						<p>The PowerShell scripting language was mainly useful to me during my placement at the Lorraine cancer institute. I used it to create several scripts that interacted with the hospital's Active Directory system in order to check that the user groups did not contain any errors that could have compromised the security of the hospital's confidential documents.</p>
+						<button class="close-button" onclick="fermerPopupPowershellAD()"></button>
+					</div>
+				</div>
+				<div class="popup-projet" id="popup-projet-performance">
+					<div class="popup-projet-content">
+						<img src="Logo-Projets\performance.PNG" alt="Projet performances applicatives">
+						<h3>A powershell robot</h3>
+						<p>The aim of this project was to develop a robot that performed actions identical to those of a user on an application. This robot recorded the loading time of the various menus in the application and then sent its data to an Oracle database. The Lorraine Cancer Institute's ServiceNav supervision software could then use this data to produce application performance graphs.</p>
+						<button class="close-button" onclick="fermerPopupPerformance()"></button>
+					</div>
+				</div>
+				<div class="popup-projet" id="popup-projet-Monitoring">
+					<div class="popup-projet-content">
+						<img src="Logo-Projets\monitoring.PNG" alt="Projets monitoring">
+						<h3>Setting up and configuring ServiceNav and Zabbix</h3>
+						<p>During my previous placements, I had the opportunity to implement two monitoring solutions: Zabbix and ServiceNav. These solutions retrieve performance data from the various IT servers and then produce graphs to inform us of changes in their status. In the event of problems, an alert is sent to warn the user that certain actions need to be taken on the servers before more serious problems occur.</p>
+						<button class="close-button" onclick="fermerPopupMonitoring()"></button>
+					</div>
+				</div>
+				<div class="popup-projet" id="popup-projet-Cybersecurity">
+					<div class="popup-projet-content">
+						<img src="Logo-Projets\cybersecurity.PNG" alt="Projet Cybersecurity">
+						<h3>Improving IT security rules</h3>
+						<p>The aim of this project was to identify flaws in the security system at the Lorraine Cancer Institute. To improve the system, I reduced the time before user passwords expired to 90 days for all users. This project also included scripted verification of user access so that only authorised users could access reserved documents.</p>
+						<button class="close-button" onclick="fermerPopupCybersecurity()"></button>
+					</div>
+				</div>
+				<div class="popup-projet" id="popup-projet-Vmware">
+					<div class="popup-projet-content">
+						<img src="Logo-Projets\vmware.PNG" alt="Projet VMware">
+						<h3>ESXi & VCenter</h3>
+						<p>The aim of this project was to set up 2 completely empty servers running an ESXi operating system. For this project, I first had to upgrade the physical components of the servers, which were very old. I then set up the complete infrastructure that is now in use at DEFI Informatique.</p>
+						<button class="close-button" onclick="fermerPopupVmware()"></button>
+					</div>
+				</div>
+				<div class="popup-projet" id="popup-projet-Docker">
+					<div class="popup-projet-content">
+						<img src="Logo-Projets\Docker.PNG" alt="Projet Docker">
+						<h3>Setting up applications using docker</h3>
+						<p>The main advantage of containerising applications is the resulting performance gain. During this project, I set up two virtual machines running Debian 11, each hosting a Portainer server. Their respective roles were to host the containerised applications, in particular GLPI and Bookstack, and to host a NGINX reverse proxy that would enable secure access from outside the company.</p>
+						<button class="close-button" onclick="fermerPopupDocker()"></button>
+					</div>
+				</div>
+			</section>
+
+			<section id="linguistiques">
+				<h2>Travels</h2>
+				<div class="Language-zone">
+					<p>I've made several trips to Italy in my life, both with school and with my family. These trips have enabled me to practise the local language and open up to other cultures.</p>
+				</div>
+				<div class="Flag">
+					<img src="Logo-Pays\Italie.PNG" alt="Drapeau italien">
+				</div>
+			</section>
+		</div>
+	</body>
+	<footer>
+		<img src="linkedin-1-150x150.png" alt="LinkedIn Logo" class="linkedin-logo" id="linkedin-logo">
+		<p class="copyright">&copy; 2023 Portfolio by JOLLY Quentin. All rights reserved.</p>
+		<script src="portfolio-auto.js"></script>
+	</footer>
+</html>

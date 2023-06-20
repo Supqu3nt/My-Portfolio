@@ -1,0 +1,739 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+	color: #000;
+	font-size: 20px;
+}
+
+/*NavBar*/
+.navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 15%;
+	height: 100vh;
+	background-color: #333;
+	padding: 1%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-weight: bold;
+	z-index: 9998;
+}
+
+.navbar img.profile-image {
+	width: 70%;
+	max-width: 70%;
+	display: block;
+	margin-bottom: 1%;
+	border: 3px solid #fff;
+}
+
+.navbar h1 {
+	font-size: 150%;
+	margin-bottom: 20px;
+	color: #fff;
+}
+
+.navbar a {
+	display: block;
+	margin-bottom: 5%;
+	text-decoration: none;
+	color: #fff;
+}
+
+
+/* Gestion du content - Tout sauf navbar */
+#content {
+	margin-left: calc(15% + 50px);
+	padding: 1%;
+}
+
+/* Nom + Prenom */
+.welcome-div {
+	background-color: #f1f1f1;
+	color: #000;
+	font-size: 250%;
+	font-weight: bold;
+	padding: 10px;
+	text-align: center;
+}
+
+/* Text About me */
+.presentation {
+	text-align: justify;
+	font-size: 100%;
+}
+
+/* Alignement des 3 blocs */
+.informations-personnelles,
+.Photo,
+.informations-complémentaires {
+	display: inline-block;
+	width: 33%;
+}
+
+/* Div secondaire de la photo des 3 blocs */
+.Photo-div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Taille de la photo des 3 blocs */
+.photo-size {
+	width: 50%;
+	height: 50%;
+}
+
+/* Espace libre entre les différentes compétences */
+.competences {
+	margin-bottom: 10px;
+}
+
+/* Titre de la catégorie des compétences */
+.competences h3 {
+	margin-top: 50px;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+/* Espace entre chaque compétences */
+.competence {
+	margin-bottom: 20px;
+}
+
+/* Espace entre le texte et la barre de progression */
+.competence p {
+	margin-bottom: 5px;
+}
+
+/* Gestion de la div contenant le nom de la compétence et le pourcentage */
+.div-skillName-content {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* Gestion du nom de la compétence */
+.skill-name {
+	text-align: left;
+}
+
+/* Gestion du pourcentage écrit */
+.value-skill {
+	text-align: right;
+}
+
+/* Gestion de la bar de progression vide */
+.progress-bar {
+	width: 100%;
+	height: 20px;
+	background-color: #f1f1f1;
+	border-radius: 5px;
+}
+
+/* Gestion de la progression dans la barre */
+.progress {
+	height: 100%;
+	background-color: #008080;
+	border-radius: 5px;
+	width: 0;
+	transition: width 0.3s ease;
+}
+
+.comment {
+	font-size: 15px;
+}
+
+.competences_h4_clickon {
+	display: flex;
+	align-items: center;
+}
+
+.general-skills {
+	border-radius: 5px;
+	padding: 5px;
+	transition: box-shadow 0.5s ease;
+}
+
+.general-skills:hover {
+	box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+	cursor: pointer;
+}
+
+.popup-skill {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 50px;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 9999;
+	align-items: center;
+}
+
+.popup-skill-content {
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	right: 10%;
+	bottom: 10%;
+	background-color: #fff;
+	border-radius: 10px;
+	overflow: auto;
+	display: flex;
+	flex-direction: column;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	align-items: center;
+	width: 70%;
+	height: 60%;
+	text-align: center;
+	
+}
+
+.popup-skills-items {
+	width: 80%;
+}
+
+
+.parcours {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.parcours-school {
+	width: 50%;
+	float: left;
+}
+.parcours-work {
+	width: 50%;
+	float: right;
+}
+
+
+
+.timeline {
+	position: relative;
+}
+
+.point {
+	position: relative;
+	padding: 20px 40px;
+}
+
+.point-work {
+	position: relative;
+	padding: 20px 40px;
+}
+
+.circle {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	width: 20px;
+	height: 20px;
+	background-color: #008080;
+	border-radius: 50%;
+}
+
+.point::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 10px;
+	transform: translateY(-50%);
+	height: calc(100% + 20px);
+	border-left: 2px solid #333333;
+}
+
+.point-work::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 10px;
+	transform: translateY(-50%);
+	height: calc(100% + 20px);
+	border-left: 2px solid #333333;
+}
+
+.point-work:hover {
+	cursor: pointer;
+}
+
+.content {
+	margin-left: 30px;
+}
+
+.content h4, p {
+	margin: 0;
+}
+
+.content h4 {
+	font-size: 22px;
+	font-weight: bold;
+	color: #008080;
+}
+
+.content p {
+	font-size: 16px;
+	margin-top: 5px;
+}
+
+.date {
+	background-color: #f1f1f1;
+	padding: 10px;
+	display: inline-block;
+	border: 2px solid #f1f1f1;
+	color: #333;
+}
+
+.popup-timeline-work {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 50px;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 9999;
+	align-items: center;
+}
+.popup-timeline-content{
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	right: 10%;
+	bottom: 10%;
+	background-color: #fff;
+	border-radius: 10px;
+	overflow: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 70%;
+	height: 60%;
+	text-align: center;
+	padding-top: 5%;
+	padding-bottom: 4%;
+}
+
+.popup-timeline-content img {
+	margin-top: 20px;
+	width: 20%;
+}
+
+.popup-timeline-content h3 {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.popup-timeline-content a {
+	margin-bottom: 20px;
+	width: 90%;
+}
+
+.timeline_work_h2_clickon {
+	display: flex;
+	align-items: center;
+}
+
+
+
+.projet-section {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.projet {
+	width: 30%;
+	margin-bottom: 20px;
+	position: relative;
+	cursor: pointer;
+	transition: box-shadow 0.5s ease;
+}
+
+.projet:hover {
+	box-shadow: 0 0 50px rgba(0, 0, 0, 1);
+}
+
+.projet img {
+	width: 100%;
+}
+
+footer {
+	background-color: #333;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.copyright {
+	color: #ffffff;
+	display: flex;
+	align-items: center;
+	font-size: 22px;
+}
+
+.linkedin-logo {
+	margin-left: 20%;
+	width: 30px;
+	margin-right: 10px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.footer-text {
+	font-size: 14px;
+}
+
+.popup-projet {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 50px;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 9999;
+	align-items: center;
+}
+
+.popup-projet-content {
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	right: 10%;
+	bottom: 10%;
+	background-color: #fff;
+	border-radius: 10px;
+	overflow: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 70%;
+	height: 60%;
+	text-align: center;
+}
+
+.popup-projet-content img {
+	margin-top: 20px;
+	width: 20%;
+}
+
+.popup-projet-content h3 {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.popup-projet-content p {
+	margin-bottom: 20px;
+	width: 90%;
+}
+	
+
+.Language-zone {
+	background-color: #f1f1f1;
+	color: #000;
+	font-size: 20px;
+	padding: 10px;
+	text-align: center;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+}
+
+.Flag {
+	margin-top:10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.Flag img {
+	border: 3px solid #333;
+	border-radius: 20px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+}
+
+
+.close-button {
+	background-color: #fff;
+	border: none;
+	padding: 0;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	position: relative;
+}
+
+.close-button::before,
+.close-button::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 70%;
+	height: 2px;
+	background-color: #333;
+}
+
+.close-button::before {
+	transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.close-button::after {
+	transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+@media screen and (max-width: 768px) {
+	.navbar {
+		width: 20%;
+		display: none;
+	}
+	
+	#content {
+		margin-left: 0%;
+		padding: 3%;
+	}
+	
+	.NavBarDisplay {
+		position: fixed;
+		display: flex;
+		width: 6%;
+		height: 30px;
+		z-index: 9997;
+		margin-top: 8%;
+		margin-right: 5%;
+		flex-direction: column;
+		right: 0;
+	}
+
+	.NavBarDisplay span {
+		position: flex;
+		width: 100%;
+		height: 100%;
+		background-color: #008080;
+		margin-bottom: 4px;
+		flex-direction: column;
+	}
+	
+	.Photo-div {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.photo-size {
+		width: 50%;
+		height: 50%;
+	}
+	.informations-personnelles,
+	.Photo{
+		display: inline-block;
+		width: 49%;
+	}
+	
+	.informations-complémentaires {
+		display: flex;
+		width: 100%;
+	}
+	.Informations-sup,
+	.Interests {
+		display: inline-block;
+		width: 50%;
+	}
+	.Interests {
+		margin-left: 25%;
+	}
+
+	.parcours-school {
+		width: 100%;
+		float: none;
+	}
+	.parcours-work {
+		width: 100%;
+		float: none;
+	}
+	
+	.linkedin-logo {
+		margin-left: 5%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.navbar {
+		width: 50%;
+		display: none;
+	}
+	
+	#content {
+		margin-left: none;
+		padding: 3%;
+	}
+	.NavBarDisplay {
+		position: fixed;
+		display: flex;
+		width: 6%;
+		height: 30px;
+		z-index: 9997;
+		margin-top: 8%;
+		margin-right: 5%;
+		flex-direction: column;
+		right: 0;
+	}
+
+	.NavBarDisplay span {
+		position: flex;
+		width: 100%;
+		height: 100%;
+		background-color: #008080;
+		margin-bottom: 4px;
+		flex-direction: column;
+	}
+	
+	.Photo-div {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.photo-size {
+		width: 50%;
+		height: 50%;
+	}
+	.informations-personnelles,
+	.Photo{
+		display: flex;
+		width: 100%;
+		align-items: center;
+	}
+	.informations-personnelles {
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+	}
+	.informations {
+		display: flex;
+		flex-direction: column;
+	}
+	.informations-complémentaires {
+		display: flex;
+		width: 100%;
+	}
+	.Informations-sup,
+	.Interests {
+		width: 150%;
+		display: block;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.popup-projet {
+		display: none;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		padding: 50px;
+		background-color: rgba(0, 0, 0, 0.5);
+		z-index: 9999;
+		align-items: center;
+	}
+
+	.popup-projet-content {
+		position: absolute;
+		top: 10%;
+		left: 10%;
+		right: 10%;
+		bottom: 10%;
+		background-color: #fff;
+		border-radius: 10px;
+		overflow: auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 65%;
+		height: 60%;
+		text-align: center;
+	}
+
+	.popup-projet-content img {
+		margin-top: 20px;
+		width: 20%;
+	}
+
+	.popup-projet-content h3 {
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+
+	.popup-projet-content p {
+		margin-bottom: 20px;
+		width: 90%;
+	}
+	
+	.copyright {
+		color: #ffffff;
+		display: flex;
+		align-items: center;
+		font-size: 16px;
+	}
+	
+	.popup-timeline-work {
+		display: none;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		padding: 60px;
+		background-color: rgba(0, 0, 0, 0.5);
+		z-index: 9999;
+		align-items: center;
+	}
+	
+	.popup-timeline-content{
+		position: absolute;
+		top: 10%;
+		left: 10%;
+		right: 10%;
+		bottom: 10%;
+		background-color: #fff;
+		border-radius: 10px;
+		overflow: auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 70%;
+		height: 60%;
+		text-align: center;
+		padding-top: 4%;
+		padding-bottom: 4%;
+	}
+
+	.popup-timeline-content img {
+		margin-top: 30%;
+		width: 20%;
+	}
+
+}
+
+
+
+
+
+
