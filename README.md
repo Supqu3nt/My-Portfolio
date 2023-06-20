@@ -1,5 +1,5 @@
 # My-Portfolio
-This repository is dedicated to the html/css and JavaScript code used to create my portfolio.
+This repository is dedicated to the html/css and JavaScript code used to create my portfolio. To view it, follow this link: https://jolly-quentin.eu
 
 ## Who is it for?
 
